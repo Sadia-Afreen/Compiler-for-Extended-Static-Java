@@ -1,4 +1,4 @@
-// Generated from G:/My Drive/Boise State University/Spring '24/Programming Language Translation/PLp1/PLp1/src/esjc/parser/ExtendedStaticJava.g4 by ANTLR 4.13.1
+// Generated from G:/My Drive/Boise State University/Spring '24/Programming Language Translation/TypeCheckerForESJ/src/esjc/parser/ExtendedStaticJava.g4 by ANTLR 4.13.1
 package esjc.parser;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
@@ -17,26 +17,6 @@ public interface ExtendedStaticJavaListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitProgram(ExtendedStaticJavaParser.ProgramContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#compilationUnit}.
-	 * @param ctx the parse tree
-	 */
-	void enterCompilationUnit(ExtendedStaticJavaParser.CompilationUnitContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link ExtendedStaticJavaParser#compilationUnit}.
-	 * @param ctx the parse tree
-	 */
-	void exitCompilationUnit(ExtendedStaticJavaParser.CompilationUnitContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#classDefinition}.
-	 * @param ctx the parse tree
-	 */
-	void enterClassDefinition(ExtendedStaticJavaParser.ClassDefinitionContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link ExtendedStaticJavaParser#classDefinition}.
-	 * @param ctx the parse tree
-	 */
-	void exitClassDefinition(ExtendedStaticJavaParser.ClassDefinitionContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#simpleClassDefintion}.
 	 * @param ctx the parse tree
@@ -57,6 +37,100 @@ public interface ExtendedStaticJavaListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitPublicFieldDeclaration(ExtendedStaticJavaParser.PublicFieldDeclarationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void enterType(ExtendedStaticJavaParser.TypeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ExtendedStaticJavaParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void exitType(ExtendedStaticJavaParser.TypeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#basicType}.
+	 * @param ctx the parse tree
+	 */
+	void enterBasicType(ExtendedStaticJavaParser.BasicTypeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ExtendedStaticJavaParser#basicType}.
+	 * @param ctx the parse tree
+	 */
+	void exitBasicType(ExtendedStaticJavaParser.BasicTypeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#intType}.
+	 * @param ctx the parse tree
+	 */
+	void enterIntType(ExtendedStaticJavaParser.IntTypeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ExtendedStaticJavaParser#intType}.
+	 * @param ctx the parse tree
+	 */
+	void exitIntType(ExtendedStaticJavaParser.IntTypeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#booleanType}.
+	 * @param ctx the parse tree
+	 */
+	void enterBooleanType(ExtendedStaticJavaParser.BooleanTypeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ExtendedStaticJavaParser#booleanType}.
+	 * @param ctx the parse tree
+	 */
+	void exitBooleanType(ExtendedStaticJavaParser.BooleanTypeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#arrayType}.
+	 * @param ctx the parse tree
+	 */
+	void enterArrayType(ExtendedStaticJavaParser.ArrayTypeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ExtendedStaticJavaParser#arrayType}.
+	 * @param ctx the parse tree
+	 */
+	void exitArrayType(ExtendedStaticJavaParser.ArrayTypeContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code VoidType}
+	 * labeled alternative in {@link ExtendedStaticJavaParser#returnType}.
+	 * @param ctx the parse tree
+	 */
+	void enterVoidType(ExtendedStaticJavaParser.VoidTypeContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code VoidType}
+	 * labeled alternative in {@link ExtendedStaticJavaParser#returnType}.
+	 * @param ctx the parse tree
+	 */
+	void exitVoidType(ExtendedStaticJavaParser.VoidTypeContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code NonVoidReturnType}
+	 * labeled alternative in {@link ExtendedStaticJavaParser#returnType}.
+	 * @param ctx the parse tree
+	 */
+	void enterNonVoidReturnType(ExtendedStaticJavaParser.NonVoidReturnTypeContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code NonVoidReturnType}
+	 * labeled alternative in {@link ExtendedStaticJavaParser#returnType}.
+	 * @param ctx the parse tree
+	 */
+	void exitNonVoidReturnType(ExtendedStaticJavaParser.NonVoidReturnTypeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#compilationUnit}.
+	 * @param ctx the parse tree
+	 */
+	void enterCompilationUnit(ExtendedStaticJavaParser.CompilationUnitContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ExtendedStaticJavaParser#compilationUnit}.
+	 * @param ctx the parse tree
+	 */
+	void exitCompilationUnit(ExtendedStaticJavaParser.CompilationUnitContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#classDefinition}.
+	 * @param ctx the parse tree
+	 */
+	void enterClassDefinition(ExtendedStaticJavaParser.ClassDefinitionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ExtendedStaticJavaParser#classDefinition}.
+	 * @param ctx the parse tree
+	 */
+	void exitClassDefinition(ExtendedStaticJavaParser.ClassDefinitionContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#memberDeclaration}.
 	 * @param ctx the parse tree
@@ -97,64 +171,6 @@ public interface ExtendedStaticJavaListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitMethodDeclaration(ExtendedStaticJavaParser.MethodDeclarationContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#type}.
-	 * @param ctx the parse tree
-	 */
-	void enterType(ExtendedStaticJavaParser.TypeContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link ExtendedStaticJavaParser#type}.
-	 * @param ctx the parse tree
-	 */
-	void exitType(ExtendedStaticJavaParser.TypeContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code BooleanType}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#basicType}.
-	 * @param ctx the parse tree
-	 */
-	void enterBooleanType(ExtendedStaticJavaParser.BooleanTypeContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code BooleanType}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#basicType}.
-	 * @param ctx the parse tree
-	 */
-	void exitBooleanType(ExtendedStaticJavaParser.BooleanTypeContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code IntType}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#basicType}.
-	 * @param ctx the parse tree
-	 */
-	void enterIntType(ExtendedStaticJavaParser.IntTypeContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code IntType}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#basicType}.
-	 * @param ctx the parse tree
-	 */
-	void exitIntType(ExtendedStaticJavaParser.IntTypeContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code VoidType}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#returnType}.
-	 * @param ctx the parse tree
-	 */
-	void enterVoidType(ExtendedStaticJavaParser.VoidTypeContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code VoidType}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#returnType}.
-	 * @param ctx the parse tree
-	 */
-	void exitVoidType(ExtendedStaticJavaParser.VoidTypeContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code NonVoidReturnType}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#returnType}.
-	 * @param ctx the parse tree
-	 */
-	void enterNonVoidReturnType(ExtendedStaticJavaParser.NonVoidReturnTypeContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code NonVoidReturnType}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#returnType}.
-	 * @param ctx the parse tree
-	 */
-	void exitNonVoidReturnType(ExtendedStaticJavaParser.NonVoidReturnTypeContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#params}.
 	 * @param ctx the parse tree
@@ -216,16 +232,6 @@ public interface ExtendedStaticJavaListener extends ParseTreeListener {
 	 */
 	void exitIncDecStatement(ExtendedStaticJavaParser.IncDecStatementContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#assign}.
-	 * @param ctx the parse tree
-	 */
-	void enterAssign(ExtendedStaticJavaParser.AssignContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link ExtendedStaticJavaParser#assign}.
-	 * @param ctx the parse tree
-	 */
-	void exitAssign(ExtendedStaticJavaParser.AssignContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#assignStatement}.
 	 * @param ctx the parse tree
 	 */
@@ -236,15 +242,51 @@ public interface ExtendedStaticJavaListener extends ParseTreeListener {
 	 */
 	void exitAssignStatement(ExtendedStaticJavaParser.AssignStatementContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#lhs}.
+	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#assign}.
 	 * @param ctx the parse tree
 	 */
-	void enterLhs(ExtendedStaticJavaParser.LhsContext ctx);
+	void enterAssign(ExtendedStaticJavaParser.AssignContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ExtendedStaticJavaParser#lhs}.
+	 * Exit a parse tree produced by {@link ExtendedStaticJavaParser#assign}.
 	 * @param ctx the parse tree
 	 */
-	void exitLhs(ExtendedStaticJavaParser.LhsContext ctx);
+	void exitAssign(ExtendedStaticJavaParser.AssignContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code SimpleLHS}
+	 * labeled alternative in {@link ExtendedStaticJavaParser#lhs}.
+	 * @param ctx the parse tree
+	 */
+	void enterSimpleLHS(ExtendedStaticJavaParser.SimpleLHSContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SimpleLHS}
+	 * labeled alternative in {@link ExtendedStaticJavaParser#lhs}.
+	 * @param ctx the parse tree
+	 */
+	void exitSimpleLHS(ExtendedStaticJavaParser.SimpleLHSContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code FieldAccessLHS}
+	 * labeled alternative in {@link ExtendedStaticJavaParser#lhs}.
+	 * @param ctx the parse tree
+	 */
+	void enterFieldAccessLHS(ExtendedStaticJavaParser.FieldAccessLHSContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code FieldAccessLHS}
+	 * labeled alternative in {@link ExtendedStaticJavaParser#lhs}.
+	 * @param ctx the parse tree
+	 */
+	void exitFieldAccessLHS(ExtendedStaticJavaParser.FieldAccessLHSContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ArrayAccessLHS}
+	 * labeled alternative in {@link ExtendedStaticJavaParser#lhs}.
+	 * @param ctx the parse tree
+	 */
+	void enterArrayAccessLHS(ExtendedStaticJavaParser.ArrayAccessLHSContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ArrayAccessLHS}
+	 * labeled alternative in {@link ExtendedStaticJavaParser#lhs}.
+	 * @param ctx the parse tree
+	 */
+	void exitArrayAccessLHS(ExtendedStaticJavaParser.ArrayAccessLHSContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#forStatement}.
 	 * @param ctx the parse tree
@@ -295,30 +337,6 @@ public interface ExtendedStaticJavaListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitDoWhileStatement(ExtendedStaticJavaParser.DoWhileStatementContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code TrueLiteral}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#booleanLiteral}.
-	 * @param ctx the parse tree
-	 */
-	void enterTrueLiteral(ExtendedStaticJavaParser.TrueLiteralContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code TrueLiteral}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#booleanLiteral}.
-	 * @param ctx the parse tree
-	 */
-	void exitTrueLiteral(ExtendedStaticJavaParser.TrueLiteralContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code FalseLiteral}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#booleanLiteral}.
-	 * @param ctx the parse tree
-	 */
-	void enterFalseLiteral(ExtendedStaticJavaParser.FalseLiteralContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code FalseLiteral}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#booleanLiteral}.
-	 * @param ctx the parse tree
-	 */
-	void exitFalseLiteral(ExtendedStaticJavaParser.FalseLiteralContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#ifStatement}.
 	 * @param ctx the parse tree
@@ -396,30 +414,6 @@ public interface ExtendedStaticJavaListener extends ParseTreeListener {
 	 */
 	void exitInvokeExp(ExtendedStaticJavaParser.InvokeExpContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code ShiftLeftExp}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#exp}.
-	 * @param ctx the parse tree
-	 */
-	void enterShiftLeftExp(ExtendedStaticJavaParser.ShiftLeftExpContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code ShiftLeftExp}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#exp}.
-	 * @param ctx the parse tree
-	 */
-	void exitShiftLeftExp(ExtendedStaticJavaParser.ShiftLeftExpContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code UnsignedShiftRightExp}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#exp}.
-	 * @param ctx the parse tree
-	 */
-	void enterUnsignedShiftRightExp(ExtendedStaticJavaParser.UnsignedShiftRightExpContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code UnsignedShiftRightExp}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#exp}.
-	 * @param ctx the parse tree
-	 */
-	void exitUnsignedShiftRightExp(ExtendedStaticJavaParser.UnsignedShiftRightExpContext ctx);
-	/**
 	 * Enter a parse tree produced by the {@code ArrayCreationExp}
 	 * labeled alternative in {@link ExtendedStaticJavaParser#exp}.
 	 * @param ctx the parse tree
@@ -480,18 +474,6 @@ public interface ExtendedStaticJavaListener extends ParseTreeListener {
 	 */
 	void exitParenExp(ExtendedStaticJavaParser.ParenExpContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code ShiftRightExp}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#exp}.
-	 * @param ctx the parse tree
-	 */
-	void enterShiftRightExp(ExtendedStaticJavaParser.ShiftRightExpContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code ShiftRightExp}
-	 * labeled alternative in {@link ExtendedStaticJavaParser#exp}.
-	 * @param ctx the parse tree
-	 */
-	void exitShiftRightExp(ExtendedStaticJavaParser.ShiftRightExpContext ctx);
-	/**
 	 * Enter a parse tree produced by the {@code IntLiteral}
 	 * labeled alternative in {@link ExtendedStaticJavaParser#exp}.
 	 * @param ctx the parse tree
@@ -551,6 +533,40 @@ public interface ExtendedStaticJavaListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitNewExp(ExtendedStaticJavaParser.NewExpContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#binaryOp}.
+	 * @param ctx the parse tree
+	 */
+	void enterBinaryOp(ExtendedStaticJavaParser.BinaryOpContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ExtendedStaticJavaParser#binaryOp}.
+	 * @param ctx the parse tree
+	 */
+	void exitBinaryOp(ExtendedStaticJavaParser.BinaryOpContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code TrueLiteral}
+	 * labeled alternative in {@link ExtendedStaticJavaParser#booleanLiteral}.
+	 * @param ctx the parse tree
+	 */
+	void enterTrueLiteral(ExtendedStaticJavaParser.TrueLiteralContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code TrueLiteral}
+	 * labeled alternative in {@link ExtendedStaticJavaParser#booleanLiteral}.
+	 * @param ctx the parse tree
+	 */
+	void exitTrueLiteral(ExtendedStaticJavaParser.TrueLiteralContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code FalseLiteral}
+	 * labeled alternative in {@link ExtendedStaticJavaParser#booleanLiteral}.
+	 * @param ctx the parse tree
+	 */
+	void enterFalseLiteral(ExtendedStaticJavaParser.FalseLiteralContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code FalseLiteral}
+	 * labeled alternative in {@link ExtendedStaticJavaParser#booleanLiteral}.
+	 * @param ctx the parse tree
+	 */
+	void exitFalseLiteral(ExtendedStaticJavaParser.FalseLiteralContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ExtendedStaticJavaParser#arrayInit}.
 	 * @param ctx the parse tree

@@ -1,15 +1,9 @@
 package esjc.parser;
 
-import java.io.FileReader;
-
-import org.antlr.v4.runtime.BaseErrorListener;
-import org.antlr.v4.runtime.CharStreams;
-import org.antlr.v4.runtime.CodePointCharStream;
-import org.antlr.v4.runtime.CommonTokenStream;
-import org.antlr.v4.runtime.RecognitionException;
-import org.antlr.v4.runtime.Recognizer;
-
 import esjc.parser.ExtendedStaticJavaParser.CompilationUnitContext;
+import org.antlr.v4.runtime.*;
+
+import java.io.FileReader;
 
 public class ExtendedParserUtil {
 
